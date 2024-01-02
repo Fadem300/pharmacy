@@ -1,0 +1,655 @@
+body {
+    background-color: #c9d6ff;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color:#000000;
+    text-align: center;
+    margin-bottom:20px ;
+    padding-top: 40px;
+    padding-left: 40px;
+    
+    border-bottom: solid;
+}
+/*sidbar*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    
+  
+   
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    
+}
+
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+   display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+
+}
+
+
+
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+    background: #5c6bc0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+ 
+}
+
+.wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+}
+
+ 
+
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+
+table{
+    background-color: white;
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.generate-btn{
+    margin-top: 20px;
+    background-color:#512da8;
+    width: 150px;
+    height: 50px;
+    margin-left: 570px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:17px;
+    border-radius: 6px;
+    color: #fff;
+
+}
+button:active{
+    transform: scale(0.96);
+}
+td.Total{
+    text-align: left;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .print-container, .print-container * {
+        visibility: visible;
+    }
+    .print-container {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+
+
+
+
+body {
+    background-color: #c9d6ff;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color:#000000;
+    text-align: center;
+    margin-bottom:20px ;
+    padding-top: 40px;
+    padding-left: 40px;
+    
+    border-bottom: solid;
+}
+label {
+    display: flex;
+  justify-content:right;
+}
+.label1 {
+    display: flex;
+  justify-content:left;
+  }
+.search{
+    background-color:gray;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+table{
+    background-color: white;
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+select {
+    width: 80px;
+    height: 30px;
+    text-align: center; 
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.export-btn {
+    margin-top: 20px;
+    background-color:#512da8;
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+
+}
+.generate-btn{
+    margin-top: 20px;
+    background-color:#512da8;
+    width: 150px;
+    height: 50px;
+    margin-left: 570px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:17px;
+    border-radius: 6px;
+    color: #fff;
+
+}
+button:active{
+    transform: scale(0.96);
+}
+td.Total{
+    text-align: left;
+}
+
+
+
+/*heder */
+
+
+
+.headercards{
+    
+    
+    height: 100px;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.p1up{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.p1down{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+    
+}
+
+.headercards{
+    height: 200;
+   
+       
+}
+.card1{
+    
+    height: 130px;
+    width: 130px;
+    
+
+}
+.card1 img{
+    height: 120px;
+    width: 120px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-style: solid; 
+
+}
+.card2{
+    height: 130px;
+    width: 500px;
+    padding-top: 20px;
+}
+.card2 p{
+    font-size: 50px;
+
+}
+
+
+.card3{
+    height: 30px;
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.card4{
+    height: 30px;
+    width: 50px;
+}
+
+.cardnull2{
+    height: 50px;
+    width: 500px;
+}
+
+
+/*dropdown-box*/
+.navbutton {
+    
+    
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    
+}
+.navbutton a{
+    text-decoration:none;
+    
+}
+
+.dropdown-box {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    padding-top: 20px;
+    margin-left: -30px;
+    
+}
+
+.aIcon:hover{
+    background-color: #7799D8;
+}
+.navbutton:hover .dropdown-box {
+    display: block;
+}
+.dropdown-box .navbutton {
+    background-color: rgb(184, 184, 184);
+}
+
+
+.dropdown-box .navbutton:hover {
+    background-color: #7799D8;
+    transition-duration: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer css*/
+footer{
+    background: #5c6bc0;
+    height: auto;
+    display: flex;
+    width: 100%;
+    font-family: monospace;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .footer-content h3{
+
+    font-size: 15px;
+    text-transform: capitalize;
+  
+  
+  }
+  .footer-contact p {
+    max-width: 500px;
+    margin: 15px auto;
+    line-height: 25px;
+    font-size: 323px;
+  }
+  
+  .footerHelp{
+  
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 50px ;
+    padding: 0px 20px ;
+  }
+  .footerHelp li {
+    margin: 0 10px;
+  }
+  .footerHelp a {
+  
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .footerHelp a i {
+  
+    font-size: 1.1rem;
+    transition: color .4s ease ;
+  }
+  
+  .footerHelp a:hover  {
+  
+    color: #7799D8;
+  }
+  .footer-bottom{
+  
+    font-size: 14px;
+    word-spacing: 2px;
+    text-decoration: capitalize;
+  
+  }
+
+ .medicine_name{
+    width: 100px;
+    height: 100px;
+ }
+ input.Add-sale{
+    width: 110px;
+    height: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    border-radius: 6px;
+    color: #fff;
+    background-color:#512da8;
+ }
+ input.Date{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    font-size:15px;
+ }
+ input.invoice_number{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    font-size:15px;
+ }
+ input.patient_name{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    font-size:15px;
+ }
+ input.price{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    font-size:15px;
+ }
+ input.qty{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    font-size:15px;
+
+ }
+ input.Save-invoice{
+    
+    margin-top: 15px;
+    background-color:#512da8;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:17px;
+    border-radius: 20px;
+ }
+ 
+
+ 
+
+
+ input.form-control{
+    width: 270px;
+    height: 30px;
+    border-radius: 8px;
+    font-size:15px;
+ }
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    
+  
+   
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    
+}
+
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+    background: #5c6bc0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+ 
+}
+
+.wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+}
+
+ 
+
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .print-container, .print-container * {
+        visibility: visible;
+    }
+    .print-container {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+}

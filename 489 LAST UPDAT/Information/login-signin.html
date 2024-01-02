@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    
+    <title>Modern Login Page </title>
+    <style>
+        input{
+            width: 10px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <nav>
+        <div class="nav-container">
+                  <img src="Images/icon1.png" >
+        </div>
+        </nav>
+<div class="title"><h1>pharmacy management System </h1></div>
+
+    <div class="container" id="container">
+
+
+        
+        <div class="form-container sign-up">
+            <form onsubmit="return validatesignup()" action="signupconnect.php" method="post" id="signupForm">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="username" name="name" id="signupName">
+                <span id="signupUsernamespan"></span>
+                <input type="password" placeholder="Password" name="password" id="signupPassword">
+                <span id="signuppasswordspan"></span>
+                <input type="text" placeholder="first name" name="Fname" id="Fname">
+                <span id="Fnamespan"></span>
+                <input type="text" placeholder="last name" name="Lname" id="Lname">
+                <span id="Lnamespan"></span>
+                <input type="date" placeholder="date of birth" name="DOB" id="DOB">
+                <span id="DOBspan"></span>
+                <label for="gender">gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <span id="genderspan"></span>
+                <input type="text" placeholder="email" name="email" id="email">
+                <span id="emailspan"></span>
+                <input type="number" placeholder="country code" name="key" id="key">
+                <span id="keyspan"></span>
+                <input type="number" placeholder="phone number" name="phonenumber" id="phonenumber">
+                <span id="phoneNspan"></span>
+                <input type="number" placeholder="house or flat" name="numberflat_house" id="numberflat_house">
+                <span id="housespan"></span>
+                <input type="number" placeholder="road" name="road" id="road">
+                <span id="roadspan"></span>
+                <input type="number" placeholder="building" name="BLD" id="BLD">
+                <span id="BLDspan"></span>
+                <input type="text" placeholder="governorate" name="gov" id="gov">
+                <span id="govspan"></span>
+                <button type="submit">Sign Up</button>
+
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form onsubmit="return validatelogin()" action="loginval.php" method="post" id="loginForm" >
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="text" placeholder="username" name="username" id="loginUsername">
+                <span id="loginUsernamespan"></span>
+                <input type="password" placeholder="Password" name="password" id="loginPassword">
+                <span id="loginpasswordspan"></span>
+                <a href="#">Forget Your Password?</a>
+                <button  type="submit">Sign In</button>
+            </form>
+        
+           
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <div class="footer-content">
+          <h3></h3>
+        
+              <ul class="footerHelp">
+                <li>
+                  <a href="#">contact us</a>
+                  <i class=" fas fa-solid fa-phone"></i>
+                </li>
+        
+                <li>
+                  <a href="#">About Us</a>
+                  <i class="fas fa-regular fa-address-card"></i>
+                </li>
+        
+                <li>
+                  <a href="#">Help</a>
+                  <i class="fas fa-question"></i>
+                </li>
+              </ul>
+        
+              <div class="footer-bottom">
+                <p>COpyriht 2023 .Registration System. All Right Reserved</p>
+              </div>
+        
+        
+        </div>
+        
+        
+        </footer>
+        
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
